@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Leisure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <canvas id="plCanvas" width="280" height="280"></canvas>
+    <span class="preloader-brand">Leisure</span>
+    <div class="preloader-line"></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Leisure</a>
+      <ul class="nav-links">
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" role="button" aria-label="Toggle menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay">
+    <a href="products/index.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--accent)">Our Story</span>
+      <h1>Born from<br><em>Obsession.</em></h1>
+    </div>
+  </section>
+
+  <section class="about-story">
+    <div class="container">
+      <div class="split">
+        <div class="split-text reveal reveal-left">
+          <span class="eyebrow">The Beginning</span>
+          <h2>Milan, 2019.</h2>
+          <p>Leisure was founded by two acoustic engineers who shared a single frustration: that the pursuit of affordable audio had quietly murdered sonic excellence. They believed a speaker should disappear — not in the room, but in the performance.</p>
+          <p style="margin-top:1.25rem">Three years of prototyping. Forty-seven driver configurations. One obsession. The result was the Leisure One — and nothing has been the same since.</p>
+          <a href="products/index.html" class="btn-dark" style="margin-top:2rem">Explore the Collection</a>
+        </div>
+        <div class="split-visual reveal reveal-right">
+          <div class="visual-tower" style="height:400px;width:100px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-values">
+    <div class="container">
+      <h2 class="reveal" style="color:var(--white);text-align:center;margin-bottom:3.5rem">Our Philosophy</h2>
+      <div class="values-grid">
+        <div class="value-item reveal reveal-delay-1">
+          <p class="value-number">01</p>
+          <h4>Craft</h4>
+          <p>Every cabinet is hand-finished. Every driver hand-measured. Tolerances that machines cannot achieve, only patience can.</p>
+        </div>
+        <div class="value-item reveal reveal-delay-2">
+          <p class="value-number">02</p>
+          <h4>Purity</h4>
+          <p>No colouration. No signature. Just the recording, exactly as the artist intended it to be heard. Pure signal. Pure truth.</p>
+        </div>
+        <div class="value-item reveal reveal-delay-3">
+          <p class="value-number">03</p>
+          <h4>Obsession</h4>
+          <p>We don't ship a product until it moves us. If it doesn't make us feel something, it doesn't leave the atelier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-banner">
+    <div class="container">
+      <h2 class="reveal" style="font-style:italic">"Sound is not just heard.<br>It is felt."</h2>
+      <p class="reveal reveal-delay-1" style="color:rgba(255,255,255,0.4);font-style:italic;margin-top:.5rem">— Marco Ferretti, Co-founder</p>
+    </div>
+  </section>
+
+  <section class="about-team">
+    <div class="container">
+      <h2 class="reveal" style="text-align:center;margin-bottom:3.5rem">The People Behind the Sound</h2>
+      <div class="team-grid">
+        <div class="team-member reveal">
+          <div class="team-photo"></div>
+          <h5>Marco Ferretti</h5>
+          <span>Co-founder &amp; Chief Acoustic Engineer</span>
+        </div>
+        <div class="team-member reveal reveal-delay-1">
+          <div class="team-photo"></div>
+          <h5>Sofia Auteri</h5>
+          <span>Co-founder &amp; Head of Design</span>
+        </div>
+        <div class="team-member reveal reveal-delay-2">
+          <div class="team-photo"></div>
+          <h5>James Hartwell</h5>
+          <span>Director of Engineering</span>
+        </div>
+        <div class="team-member reveal reveal-delay-3">
+          <div class="team-photo"></div>
+          <h5>Yuki Tanaka</h5>
+          <span>Head of Material Research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Leisure</h3>
+          <p>Precision-engineered loudspeakers for the discerning listener. Crafted in Milan since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h6>Collection</h6>
+          <ul>
+            <li><a href="products/leisure-one.html">Leisure One</a></li>
+            <li><a href="products/leisure-studio.html">Leisure Studio</a></li>
+            <li><a href="products/leisure-arc.html">Leisure Arc</a></li>
+            <li><a href="products/leisure-noir.html">Leisure Noir</a></li>
+            <li><a href="products/leisure-ivory.html">Leisure Ivory</a></li>
+            <li><a href="products/leisure-nomad.html">Leisure Nomad</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Reach Us</h6>
+          <ul>
+            <li><a href="#">Milan, Italy</a></li>
+            <li><a href="#">London, UK</a></li>
+            <li><a href="#">hello@leisureaudio.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Leisure Audio. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/preloader-3d.js"></script>
+</body>
+</html>
+

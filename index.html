@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leisure | The Art of Sound</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <canvas id="plCanvas" width="280" height="280"></canvas>
+    <span class="preloader-brand">Leisure</span>
+    <div class="preloader-line"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Leisure</a>
+      <ul class="nav-links">
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" role="button" aria-label="Toggle menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay">
+    <a href="products/index.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ═══ HERO — Full-screen video ═══════════════════════════ -->
+  <section class="video-hero" id="hero">
+    <video class="vh-video" id="heroVideo" autoplay muted loop playsinline>
+      <source src="assets/video/legend.mp4" type="video/mp4">
+    </video>
+    <div class="vh-overlay"></div>
+    <div class="vh-content">
+      <span class="vh-eyebrow">Est. 2019 &nbsp;&mdash;&nbsp; The Art of Sound</span>
+      <h1 class="vh-title">Leisure</h1>
+      <p class="vh-sub">Premium Bluetooth Speakers. Handcrafted for those<br>who hear the difference.</p>
+      <div class="vh-actions">
+        <a href="#dominator" class="btn-dark">Discover Now</a>
+        <a href="products/index.html" class="btn-ghost">View Collection</a>
+      </div>
+    </div>
+    <div class="scroll-indicator vh-scroll" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══ PRODUCT INTRO — Scroll sequence ═══════════════════ -->
+  <section class="prod-seq" id="dominator">
+    <div class="ps-sticky">
+      <div class="ps-bg"></div>
+      <div class="ps-img-wrap">
+        <img src="assets/images/speaker-black.png" alt="Leisure Dominator" class="ps-img" id="psImg">
+        <div class="ps-img-glow"></div>
+      </div>
+      <div class="ps-panels">
+        <div class="ps-panel active" id="psp1">
+          <span class="eyebrow">The Dominator Series</span>
+          <h2>Sound that<br>commands the room.</h2>
+          <p>Premium genuine leather. Solid brass accents. Fifty watts of precision audio. The Dominator is not just a speaker — it is an object of desire.</p>
+        </div>
+        <div class="ps-panel" id="psp2">
+          <span class="eyebrow">Engineered for Audio</span>
+          <h2>140W of pure<br>audio truth.</h2>
+          <div class="ps-specs-row">
+            <div class="ps-spec"><span class="pss-v">140W</span><span class="pss-k">Peak Output</span></div>
+            <div class="ps-spec"><span class="pss-v">9h</span><span class="pss-k">Battery Life</span></div>
+            <div class="ps-spec"><span class="pss-v">BT 5.3</span><span class="pss-k">Bluetooth</span></div>
+            <div class="ps-spec"><span class="pss-v">IPX5</span><span class="pss-k">Water Resistant</span></div>
+          </div>
+        </div>
+        <div class="ps-panel" id="psp3">
+          <span class="eyebrow">Five Colourways</span>
+          <h2>Choose your<br>statement.</h2>
+          <p>From Midnight Black to Sunset Orange — each Dominator is wrapped in full-grain genuine leather with hand-fitted brass hardware.</p>
+          <a href="#colours" class="btn-dark" style="margin-top:2rem">Choose Your Colour</a>
+        </div>
+      </div>
+      <div class="ps-progress-track"><div class="ps-progress-fill" id="psProgressFill"></div></div>
+      <div class="scroll-indicator ps-cue" id="psCue" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPECS BAND ══════════════════════════════════════════ -->
+  <section class="specs-band">
+    <div class="container">
+      <div class="specs-band-grid">
+        <div class="sb-item reveal"><span class="sb-val">140W</span><span class="sb-lbl">Peak Output</span></div>
+        <div class="sb-item reveal reveal-delay-1"><span class="sb-val">9h</span><span class="sb-lbl">Battery Life</span></div>
+        <div class="sb-item reveal reveal-delay-2"><span class="sb-val">BT 5.3</span><span class="sb-lbl">Bluetooth</span></div>
+        <div class="sb-item reveal reveal-delay-3"><span class="sb-val">IPX5</span><span class="sb-lbl">Water Resistant</span></div>
+        <div class="sb-item reveal reveal-delay-3"><span class="sb-val">2</span><span class="sb-lbl">Wireless Mics</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EQ BAR DIVIDER ══════════════════════════════════════ -->
+  <div class="eq-section" aria-hidden="true"><div class="eq-bars" id="eqBars"></div></div>
+
+  <!-- ═══ COLOUR SELECTOR — scroll-driven ════════════════════ -->
+  <section class="colour-seq" id="colours">
+    <div class="colour-sticky">
+      <div class="colour-bg"></div>
+      <div class="colour-img-wrap">
+        <img src="assets/images/speaker-black.png"  class="colour-img active" id="ci0" alt="Midnight Black">
+        <img src="assets/textures/grey-r1.png"      class="colour-img"        id="ci1" alt="Light Grey">
+      </div>
+      <div class="colour-info">
+        <span class="eyebrow" id="colourNum">01 / Five Colourways</span>
+        <h2 id="colourName">Midnight<br>Black.</h2>
+        <p id="colourDesc">Jet-black full-grain leather with aged brass hardware. The most iconic Dominator colourway — bold, refined, unmistakable.</p>
+        <div class="colour-swatches">
+          <button class="csw active" data-c="0" style="--sw:#1a1410" aria-label="Midnight Black"></button>
+          <button class="csw"        data-c="1" style="--sw:#c8c4be" aria-label="Light Grey"></button>
+        </div>
+        <a href="contact.html" class="btn-dark" style="margin-top:2.5rem">Request to Purchase</a>
+      </div>
+      <div class="colour-progress-track"><div class="colour-progress-fill" id="colourProgressFill"></div></div>
+    </div>
+  </section>
+
+  <!-- ═══ DETAIL GALLERY ══════════════════════════════════════ -->
+  <section class="detail-gallery section-pad">
+    <div class="container">
+      <div class="dg-header">
+        <span class="eyebrow">Craftsmanship</span>
+        <h2 class="reveal">Every detail. <em>Considered.</em></h2>
+        <p class="reveal reveal-delay-1" style="max-width:480px;margin-top:1rem">From the hand-stitched leather to the machined brass knobs — every element of the Dominator is chosen for tactile and sonic excellence.</p>
+      </div>
+      <div class="dg-grid">
+        <div class="dg-large reveal">
+          <img src="assets/textures/detail-r8.png" alt="Leisure Dominator profile">
+        </div>
+        <div class="dg-stack">
+          <div class="dg-item reveal reveal-delay-1">
+            <img src="assets/textures/detail-r7.png" alt="Leisure Dominator back">
+          </div>
+          <div class="dg-item reveal reveal-delay-2">
+            <img src="assets/textures/detail-r9.png" alt="Leisure detail">
+          </div>
+        </div>
+        <div class="dg-item reveal reveal-delay-1">
+          <img src="assets/images/grill-texture.png" alt="Grille texture">
+        </div>
+        <div class="dg-item reveal reveal-delay-2">
+          <img src="assets/textures/detail-grey-r1.png" alt="Grey edition">
+        </div>
+        <div class="dg-item reveal reveal-delay-3">
+          <img src="assets/textures/detail-grey-r2.png" alt="Detail shot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BRAND STATEMENT ═════════════════════════════════════ -->
+  <section class="brand-statement">
+    <div class="container">
+      <div class="split">
+        <div class="split-text reveal reveal-left">
+          <span class="eyebrow">Our Philosophy</span>
+          <h2>Made for those<br>who hear the<br>difference.</h2>
+          <p>At Leisure, we believe a speaker should be as beautiful to look at as it is to listen to. Every Dominator is hand-wrapped, fitted with genuine brass hardware, and tested for 48 hours before it leaves our facility.</p>
+          <a href="about.html" class="btn-dark" style="margin-top:2rem">Our Story</a>
+        </div>
+        <div class="split-visual reveal reveal-right">
+          <img src="assets/images/speaker-brown.png" alt="Leisure Dominator Cognac Brown"
+               style="max-width:440px;width:100%;object-fit:contain;filter:drop-shadow(0 50px 100px rgba(0,0,0,0.65))">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ══════════════════════════════════════════════ -->
+  <section class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span>The Art of Sound &nbsp;&mdash;&nbsp;</span>
+      <span>Genuine Leather &nbsp;&mdash;&nbsp;</span>
+      <span>Brass Hardware &nbsp;&mdash;&nbsp;</span>
+      <span>140W Peak Output &nbsp;&mdash;&nbsp;</span>
+      <span>9h Battery Life &nbsp;&mdash;&nbsp;</span>
+      <span>The Art of Sound &nbsp;&mdash;&nbsp;</span>
+      <span>Genuine Leather &nbsp;&mdash;&nbsp;</span>
+      <span>Brass Hardware &nbsp;&mdash;&nbsp;</span>
+      <span>140W Peak Output &nbsp;&mdash;&nbsp;</span>
+      <span>9h Battery Life &nbsp;&mdash;&nbsp;</span>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Leisure</h3>
+          <p>Premium Bluetooth speakers crafted for those who hear the difference.</p>
+        </div>
+        <div class="footer-col"><h6>Products</h6><ul>
+          <li><a href="products/index.html">The Dominator</a></li>
+          <li><a href="products/index.html">View All</a></li>
+        </ul></div>
+        <div class="footer-col"><h6>Company</h6><ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h6>Reach Us</h6><ul>
+          <li>hello@leisureaudio.com</li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Leisure Audio. All rights reserved.</p>
+        <div class="footer-socials"><a href="#">Instagram</a><a href="#">YouTube</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/preloader-3d.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

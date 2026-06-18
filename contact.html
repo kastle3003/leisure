@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Leisure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <canvas id="plCanvas" width="280" height="280"></canvas>
+    <span class="preloader-brand">Leisure</span>
+    <div class="preloader-line"></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Leisure</a>
+      <ul class="nav-links">
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" role="button" aria-label="Toggle menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay">
+    <a href="products/index.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--accent)">We'd love to hear from you</span>
+      <h1>Get in Touch.</h1>
+    </div>
+  </section>
+
+  <!-- Contact Body -->
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group" data-field="name">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="Your name" autocomplete="name" />
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group" data-field="email">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="you@example.com" autocomplete="email" />
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject">
+                <option value="">Select a topic</option>
+                <option>General Enquiry</option>
+                <option>Press &amp; Media</option>
+                <option>Wholesale &amp; Dealers</option>
+                <option>Technical Support</option>
+                <option>Bespoke Commission</option>
+              </select>
+            </div>
+            <div class="form-group" data-field="message">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" placeholder="Tell us how we can help…"></textarea>
+              <span class="field-error"></span>
+            </div>
+            <button type="submit" class="btn-dark" style="width:100%;justify-content:center">Send Message</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <h4>Message Received.</h4>
+            <p>We typically respond within one business day. Thank you for reaching out.</p>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info reveal reveal-right">
+          <span class="eyebrow">Our Atelier</span>
+          <h2>Visit Us.</h2>
+          <p>Our atelier is open by appointment. Come hear what the finest loudspeakers in the world sound like in a real listening room.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-item">
+              <label>Milan — Headquarters</label>
+              <span>Via della Spiga 12, 20121 Milano, Italy</span>
+            </div>
+            <div class="contact-detail-item">
+              <label>London — Showroom</label>
+              <span>14 Savile Row, London W1S 3PJ, UK</span>
+            </div>
+            <div class="contact-detail-item">
+              <label>Email</label>
+              <span>hello@leisureaudio.com</span>
+            </div>
+            <div class="contact-detail-item">
+              <label>Phone</label>
+              <span>+39 02 1234 5678</span>
+            </div>
+          </div>
+
+          <div class="map-placeholder">Visit Our Atelier</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Leisure</h3>
+          <p>Precision-engineered loudspeakers for the discerning listener. Crafted in Milan since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h6>Collection</h6>
+          <ul>
+            <li><a href="products/leisure-one.html">Leisure One</a></li>
+            <li><a href="products/leisure-studio.html">Leisure Studio</a></li>
+            <li><a href="products/leisure-arc.html">Leisure Arc</a></li>
+            <li><a href="products/leisure-noir.html">Leisure Noir</a></li>
+            <li><a href="products/leisure-ivory.html">Leisure Ivory</a></li>
+            <li><a href="products/leisure-nomad.html">Leisure Nomad</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Reach Us</h6>
+          <ul>
+            <li><a href="#">Milan, Italy</a></li>
+            <li><a href="#">London, UK</a></li>
+            <li><a href="#">hello@leisureaudio.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Leisure Audio. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/preloader-3d.js"></script>
+</body>
+</html>
+
